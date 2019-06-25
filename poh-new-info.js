@@ -1,6 +1,6 @@
 // CONSTANTS
 var contractAddress = '0xfcd3a0f5f416e407647a7518b90354946d316059'
-var donationAddress = '0x56f248c36642b58251d44e3328e735c01cba875d'
+var donationAddress = '0x410241359fb75C7A1A7789cdAb1638b8A308350B'
 
 // GLOBALS
 var web3Mode = null
