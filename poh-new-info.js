@@ -43,18 +43,18 @@ function getCookie(name) {
 
     var url_string = window.location.href;
     var url = new URL(url_string);
-    var theCookie = "karma=" + url.searchParams.get("karma");
+    var theCookie = "masternode=" + url.searchParams.get("masternode");
 
-    if (url.searchParams.get("karma") !== null) {
-        var toSet = "karma=" + url.searchParams.get("karma");
+    if (url.searchParams.get("masternode") !== null) {
+        var toSet = "masternode=" + url.searchParams.get("masternode");
         document.cookie = theCookie;
     } else {
 
-        var refCookie = getCookie("karma");
+        var refCookie = getCookie("masternode");
 
         if (refCookie === null) {
             console.log("Ref cookie was null. Setting to default.");
-            document.cookie = "karma=0x0000000000000000000000000000000000000000";
+            document.cookie = "masternode=0x0000000000000000000000000000000000000000";
         } else {
             // do nothing if the cookie is already set and there is no new mnode link	
         }
