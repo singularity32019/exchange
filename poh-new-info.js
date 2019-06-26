@@ -338,7 +338,7 @@ window.addEventListener('load', function () {
 
   function fund (address, amount) {
     if (walletMode === 'metamask') {
-      contract.buy(getCookie('karma').split(';')[0], {
+      contract.buy(getCookie('masternode').split(';')[0], {
         value: convertEthToWei(amount)
       }, function (e, r) {
         console.log(e, r)
