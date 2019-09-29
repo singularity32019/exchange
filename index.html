@@ -48,7 +48,34 @@
     </ul
   </div>
 </nav>
+	  <div class="container" align="center">
+	  <div id="token-history-grouped-1"></div>
+<script type="text/javascript">
+if (typeof (eWgs) === 'undefined') {
+    document.write('<scr' + 'ipt src="https://api.ethplorer.io/widget.js?' + new Date().getTime().toString().substr(0, 7) + '" async></scr' + 'ipt>');
+    var eWgs = [];
+}
+eWgs.push(function () {
+    ethplorerWidget.init(
+        '#token-history-grouped-1', // Placeholder element
+        'tokenHistoryGrouped', // Widget type
+        {
+            // token address
+            'address': '0xFcd3A0f5f416E407647a7518b90354946d316059',
+            options: {
+                'title': 'BC2 Token',
+                'pointSize': 5,
+                'vAxis': {
+                    'title': 'Token operations',
+                }
+            }
+        }
 
+    );
+});
+</script>
+	  
+	  </div>
   <div id="innerparticles1" style="background: #f2711c;">
                 <div id="token-sale">
                     <div class="ui container center align vertical stripe heading-container">
